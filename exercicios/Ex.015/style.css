@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+body {
+    background-color:rebeccapurple;
+    font-family:monospace
+}
+h1 {
+    color: black
+}
+h2 {
+    color: black
+}
+p {
+    color: whitesmoke
+}
+a {
+    color: steelblue;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

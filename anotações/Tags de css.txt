@@ -1,0 +1,190 @@
+Repositórios Públicos
+github.com/gustavoguanabara
+gustavoguanabara.github.io
+
+Sites para auxiliar com paletas de cores (gratuitos):
+Adobe colors;
+Paleton;
+Coolors;
+
+Anotações de CSS
+
+N = Número
+P = Palavra
+L = Link (de video, imagem etc)
+LA = Local do arquivo (dentro do pc)
+
+@charset = regra
+Ex: @charset "UTF-8";  (saida: irá aceitar caracteres UTF-8 (´, ~ etc))
+
+@import = importa algo (fonte ou outras coisas)
+Ex: @import url('L');  (saida: irá suportar a fonte ou o que seja que está presente no L)
+
+@font-face = importa uma fonte interna
+Ex:  @font-face { font-family: P; 
+		src: url(LA) format('P') }
+
+ Tipos de format()
+ - opentype (otf)
+ - truetype (ttf)
+ - embedded-opentype
+ - truetype-att (Apple Advanced Typography)
+ - svg
+
+* = configuração global
+Ex:  height: 100%;  (saida: em gradientes baixo para cima, por exemplo, a tela toda
+será apenas um gradiente)
+
+width = largura
+Ex:  width; 200px;  (saida: tudo tera 200 pixels de largura)
+
+max/min width = largura minima/maxima
+Ex:  max-width: Npx;  (terá uma largura máxima de N pixels)
+
+height = altura
+Ex: height; 200px;  (saida: tudo tera 200 pixels de altura)
+
+line-height = altura de uma linha de texto
+Ex: line=height; 200px;  (saida: o text tera 200 pixels de altura)
+
+columns = diz quantas colunas algo terá
+Ex: columns: 2;  (uma lista (por exemplo) será dividida em duas colunas)
+
+color: = muda a cor
+Ex:  color: blue;  (Saida: tudo será azul)}
+
+Na tag color é possivel usar codigos hexadecimais, colocando usar "#" e em seguida o código.
+É pode se usar códigos RGB (Red, Green, Blue), basta usar "rgb ()" e colocar o código entre
+os parenteses.
+Também existe o código HSF (Hue, Saturation, Luminosity), é usado colocando "hsl()" e
+deixar as informações no parenteses.
+
+background-attachment = diz a maquina como o fundo se comportará
+Ex:  background-attachment: fixed;  (saida: o fundo do site não irá se mover)
+
+background-color = troca a cor do fundo
+Ex:  background-color: black;  (saida: o fundo será preto)
+
+COMO FAZER GRADIENTE/DEGRADÊ
+Ex:  background-image: linear-gradient(to right, white, blue);  (saida: o fundo será um
+gradiente, de branco para azul)
+
+font-family = muda a fonte
+Ex: font-family: Arial;  (saida: tudo ficará em Arial)
+
+font-style = muda o estilo da fonte (negrito, italico etc)
+Ex:  font-style: italic;  (saida: tudo ficará em itálico)
+
+font-weight = muda o peso (grossura) da fonte
+Ex:  font-weight: bolder;  (saida: tudo ficará extra-negrito (bolder))
+
+font-size = muda o tamanho da fonte
+Ex:  font-size: 20px;  (saida: tudo ficará no tamanho 20 px)
+
+Sempre use "px" ou "em" quando for definir o tamanho de uma fonte
+
+font = une "font-size", "font-weight", "font-family" e "font-style" em uma só
+Ex:  font: italic bolder 20px Arial;  (saida: tudo dentro ficará no tamanho 20 px, negrito,
+emitalico e na fonte Arial)
+
+Na tag "font"; é usado primeiro o estilo da fonte, depois o seu peso, seu tamanho e por
+fima fonte em si.
+
+box-shadow = cria um sombra
+Ex:  box-shadow: 5px 5px 5px black;  (saida: cria uma sombra tem 5px para os lados,
+5px para baixo, 5px de espalhamento e na cor preta)
+
+text-shadow = cria uma sombra em um texto
+Ex:  text-shadow: 5px 5px 5px black;  (saida: cria uma sombra tem 5px para os lados, 5px
+para baixo, 5px de espalhamento e na cor preta)
+
+Para criar sombras, o primeiro argumento é quanto ela vai para os lados, o segundo é para
+baixo, o terceiro é o espalhamento e o ultimo é a sua cor.
+
+border = cria um borda
+Ex:  border: solid 2px red;  (saida: uma borda vermelha com 2 pixels)
+
+border-radious = arredonda a borda
+Ex:  border-radious: 2px;
+(saida: arredonda a borda 5 pixels antes de sua "esquina")
+
+Os valores de border radious seguem do canto superior esquerdo, logo depois o direito,
+inferior direito e por fim, inferior esquerdo.
+
+COMO PERSONALIZAR A BORDA
+  border: 15px solid black;
+  border-image: url(LA) N repeat/stretch
+(Saida: a tag terá uma borda personalizada)
+No segundo valor, regule o numero até se adequar a suas preferencias
+
+
+margin = define uma margem
+Ex:  margin: 20px 20px 20px 20px;  (saida: cria uma margem de 20px em todas as direções)
+
+padding = define um expaço entre a borda o texto
+Ex:  padding: 20px 20px 20px 20px;  (saida: o texto irá ocupar 20 px a mais em todas
+                                     as direções)
+
+Na tag padding, margin, etc; os valores seguem no sentido horário, primeiro cima, depois
+direita, baixo e por fim esquerda.
+
+text-align = define onde o texto estará
+Ex:  text-align: center;  (coloca o texto no centro)
+
+font-decorations = coloca decorações (underline e etc) na fonte
+Ex:  text-decorations: underline;  (saida: tudo ficará sublinhado)
+
+text-indent = faz com que o inicio do texto tenha um espaçamento
+Ex:  text indent: 20px;  (saida: a primeira palavra do texto terá 20px de espaçamento
+do inicio da frase)
+
+list-style-position = define a posição da bolinha ao lado da lista
+Ex: lis-style-position: inside;  (saida: coloca as marcações de cada item da lista dentro do
+                                  bloco localizado)
+
+trasition-duration = muda o tempo da transição
+Ex: trasition-duration: 0.5s;  (saida: transições iram durar 0.5 segundos)
+
+display = diz o modo que a tag será exibida
+Ex: display: block;  (saida: o objeto será exibido de forma padrão)
+
+hover = serve para categorizar de forma diferente uma parte da tela com e sem o mouse
+por cima dela
+Ex: p:hover { background color: green; }  (saida: quando passar o mouse por cima da tag p,
+                                           o fundo dela será verde)
+
+visited = serve para categorizar de forma diferente um link visitado e não visitado
+Ex: a:visited { color: red; }  (saida: sites (na tag a) já visitados aparecerão em vermelho)
+
+active = serve para categorizar de forma diferente um "botão" sendo pressionado ou não
+Ex: a:active { color: black; }  (saida: quando precionado, o botão do link ficará preto)
+
+before = serve para definir/categorizar algo de firacá antes de uma tag
+Ex: a::before { content:' P' }  (saida: "(tudo dentro da tag a) P")
+
+after = serve para definir/categorizar algo de firacá depois de uma tag
+Ex: a::after { content:' P' }  (saida: "(tudo dentro da tag a) P")
+
+COMO CRIAR VARIAVEIS
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+(saida: as variaveis cor0 e cor2 seram criadas)
+Para acessar uma varivel é necessario usar "var(--*nome da variavel*)
+
+COMO CENTRALIZAR VIDEOS DO YOUTUBE
+div.video {
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+div.video iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+(saida: o video se adaptaram para qualquer tamanho e ficarão centralizados)
+(os valores podem ser modificados, porém esses são os que funcionaram para mim)

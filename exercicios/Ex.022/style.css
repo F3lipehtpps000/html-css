@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body {
+    font-family: sans-serif;
+    background-color: dimgray;
+    width: 650px;
+    text-align: center;
+}
+nav {
+    background-color: lightgray;
+    padding: 3px;
+}
+nav > link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+header {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+main {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+article {
+    background-color: lightgray;
+    border-radius: 5px;
+}
+article > aside {
+    background-color: rgb(165, 165, 165);
+}
+footer {
+    background-color: black;
+    color: white;
+    padding: 1px;
+    margin: 0px;
+    border-radius: 5px;
+}

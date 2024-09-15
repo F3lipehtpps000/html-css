@@ -1,0 +1,271 @@
+Repositórios Públicos
+github.com/gustavoguanabara
+gustavoguanabara.github.io
+
+Anotações de HTML
+
+N = Número
+P = Palavra
+L = Link (de video, imagem etc)
+LA = Local do arquivo (dentro do pc)
+
+<> = Começar
+</> = Finalizar
+	
+#  = id
+.  = class
+:  = pseudo-class
+:: = pseudo-element
+>  = children
+
+! = NO VISUAL STUDIO CODE, cria uma extrutura básica para o código (!doctype, html, meta etc)
+
+!-- / -- = cria um comentário (texto ignorado pela maquina)
+Ex:  <!--P-->  (saida: P aparecerá no codigo mas não na tela)
+
+button = Cria um botão
+Ex:  <button>P</button>  (cria um botão com uma palavra)
+
+h1/h2/h3/h4/h5/h6 = modifica o tamanho e cria titulos
+Ex:  <h1>P</h1>  (almenta para o maior tamanho possivel, criando um titulo)
+
+hr = cria uma linha horisontal
+
+spand = não faz porra nenhuma, apenas coloca um texto dentro dela
+Ex: <p>P <spand>P</spand> P<p>  (saida: P P P)
+
+class = cria uma classe (pode existir duas classes iguais)
+Ex: <p class="P">P</p>
+    <p class="P">P</p>  (saida: ambas as tags p estaram na classe "P")
+
+id = cria um identificador (não pode existir dois ids iguai)
+Ex: <p id="P">P</p>  (saida: Apenas esta tag p terá um id, que será "P")
+
+Em css, quando for necessário acessar um identificador, nós usamos a tag (no exemplo a tag p)
+seguido de "#" e o nome do id (no caso "P"). É possivel colocar sem a tag, apenas a "#",
+e o nome do id. No caso das classes se faz o mesmo, apenas usando "." ou invéz de "#"
+
+& = cria simbolos (como <, ↑ etc)
+Ex: &lt;p&gt;  (saida: <p> (não como tag))
+
+Para emojis se usa "&#x" mais um codigo pegado do site emojipedia (somente aquilo depois do 
+U+)
+
+br = quebra linha
+Ex:  Seu<br>
+     Pai  ("Pai" fica na linha abaixo de "Seu")
+
+sub (subrescrito) / sup (sobrescrito) = sub-sobrescreve um texto
+Ex:  2<sup>2</sup>  (saida: 2 elevado a 2)
+
+em/i = itálico (emtalico)
+Ex: <em>P</em>  (saida = P (em itálico))
+    <i>P</i> (saida = P (em itálico))
+
+strong/b = negrito (letra forte)
+Ex: <strong>P</strong>  (saida = P (em negrito))
+Ex: <b><P/b>  (saida = palavra (em negrito))
+
+mark = marca o texto
+Ex:  <mark>P</mark>  (saida: P fica marcado)
+
+del = deixa riscado
+Ex:  <del>P</del>  (saida: P riscado)
+
+ins = sublinhado
+Ex:  <ins>P</ins>  (saida: P sublinhado)
+
+small = deixa menor
+Ex:  <small>P</small> (saida: P em letras menores)
+
+q = coloca aspás
+Ex:  <q>P</q>  (saida: "P")
+
+abbr = cria uma abreviação
+Ex:  <abbr tittle="Palavra">P</abbr>  (saida: P (quando se passa o cursor em cima, aparecerá
+"P"))
+
+code = coloca em uma fonte mono-espaçada
+Ex:  <code>P</code>  (saida: P (numa fonte mono-espaçada))
+
+bdo = texto invertido
+Ex:  <bdo tittle="rlt">palavra</bdo>  (saida: arvalap)
+
+pre = considera espaços e quebras de linha
+Ex:  <pre>
+ T
+ E
+ U
+
+ P
+ A
+ I
+
+</pre>  (saida: TEU PAI (respeitando as quebras de linha e espaços))
+
+title = cria um titulo (palavra(s) que fica na janela do navegador)
+
+picture + source = é ser usado para criar imagens flexiveis
+Ex:
+<picture>
+     <source media="(max-width: N)" srcset="image01(L/LA)" (pode ser outro formato)">
+     <img src="image02(L/LA)" alt="Imagem flexivel">
+</picture>
+(saida: uma imagem que muda dependendo do tamanho da tela)
+
+a = cria um link
+Ex: <a href="L"> P</a>  (Cria um botão escrito P que leva para um site)
+
+ul/il = lista desordenada
+Ex: <ul>
+       <li>Primeiro</li>  (Saida: Primeiro
+       <li>Segundo</li>    Saida: Segundo )
+    <ul>
+ol/il = lista ordenada
+Ex: <ol type="1">
+       <li>Primeiro</li>  (Saida: 1. Primeiro
+       <li>Segundo</li>    Saida: 2. Segundo )
+    <ol> 
+
+dl = lista de definição
+dd = termo em uma lista de definição
+dl = definição em uma lista de definição
+Ex: <dl>
+        <dd>HTML</dd>
+        <dl>Linguagem de marcação usada no conteúdo de um site</dl>
+    </dl>
+(saida: HTML
+         Linguagem de marcação usada no conteúdo de um site)
+
+audio = reproduz um áudio
+Ex:  <audio src="LA/L" controls autoplay></audio>  (saida: cria botão que reproduz um áudio)
+
+Para fazer audios flexiveis use:
+<audio>
+   <source src="L/LA" type="audio/mpeg">
+   <source src="L/LA" type="audio/ogg">
+   <source src="L/LA" type="audio/wav">
+</audio>
+(saida: irá tentar carregar o audio no formato mpeg, caso não seja possivel, carregara em
+ogg. Caso carregar em ogg não seja possivel, carregara em wav)
+
+img = imagem
+Ex: <img src="L/LA">         (Saida: imagem)
+    <img src="L/LA" alt="P"> (Saida: imagem, caso indisponivel, saida: P)
+
+Caso você vá usar imagens é recomendado usar sites como "Unspleash.com" ou "pexels.com",
+pois sites como esse possuem imagens sem direitos autorais
+
+Após o link da imagem você pode usar height="N" e width="N" para definir a altura e a
+largura respectivamente. (Pode ser usado em CSS)
+	
+video = videos
+Ex: <video width="N" height="N" src="L/LA" controls><video>  (Saida: video)
+
+iframe = videos
+Ex: <iframe width="N" height="N" src="L/LA"><iframe>  (Saida: video)
+
+É possivel pegar videos do Youtube e usar na tag iframe apenas indo em "compartilhar",
+ "incorporar" e copiar o código
+
+!doctype html = faz com que o programa saiba a versão do html
+Ex> <!doctype>
+    *comando*
+
+html lang = diz que o site é em html e em português
+Ex:  <html lang="pt-br">
+     *comando*
+     </html>
+
+head = serve para separar links para arquivos CSS e JS e outros conteudos "não visiveis" do 
+resto
+Ex: <head>
+    *comando*
+    </head>
+
+body = serve para dividir textos, imagens e outros dados visiveis no site de outros dados
+Ex: <body>
+    *comando*
+    </body>
+
+meta charset UTF-8 = faz com que o comando aceite acentos (´; `, ~, ^ etc)
+Ex:  <meta charset="UTF-8">
+Já em CSS se usa @charset UTF-8
+Ex: @charset UTF-8
+
+meta name = faz com que o site seja vizualizado em uma escala um pra um
+Ex:  <meta name="vewport"
+      content="width=device-width,initial-scale=1.0">
+
+link = usado para associar uma folha de estilo ao HTML
+Ex: <link rel="stylesheet" href="style.css">
+
+Para especificar a localização de uma folha de estilo, defina o href para atribuir
+"style.css" (PS: é possivel usar mais do que um link)
+Ex: <link rel="P" href="style.css">
+
+style = é uma forma de usar um comando CSS em um documento HTML
+Ex:  <style>
+        p {
+        font-size: 20px;
+        }
+     </style>
+(saida: P ficará com o tamanho 20px)
+
+script = é uma forma de usar java script dentro de HTML
+Ex:  <script>
+        *comando em js*       
+     </script>
+(saida: executa o comando java script dentro do HTML)
+
+input = serve para com que o cliente possa inserir algo
+Ex: input type="number" name="P" id="P">  (saida: adicionará um "botão" onde o cliente
+                                           poderá colocar um número)
+
+headler = cria uma divisão onde estará o cabeçalho
+Ex:  <headler>
+     *comando*
+     </headler>
+(saida: tudo dentro de headler será considerado como cabeçalho)
+
+footer = cria uma divisão onde estará o rodapé
+Ex:  <footer>
+    *comando*
+    </footer>
+(saida: tudo dentro de headler será considerado como rodapé)
+
+main = cria uma divisão onde está o conteúdo "principal"
+Ex:  <main>
+     *comando*
+     </main>
+(saida: tudo dentro de main (*comando*) será o conteúdo principal)
+
+div = cria um "divisória". É como um main, porém genérico
+Ex: <div>
+    *comando*
+    </div>
+(saida: tudo dentro da div será separado do resto)
+
+section = cria uma seção
+Ex: <section>
+    *comando*
+    </section>
+(saida: tudo dentro de section estará em uma seção separada do resto)
+
+article = cria um artigo dentro de section.
+Ex: <article>
+    *comando*
+    </article>
+(saida: tudo dentro de article será separado em conteúdo)
+
+aside = cria uma divisão relativa ao artigo
+Ex: <aside>
+    *comando*
+    </aside>
+(saida: tudo dentro de aside estará separado, porém vinculado ao artigo)
+
+nav = cria uma divisão especial para os links
+Ex: <nav>
+    *links*
+    </nav>
+(saida: os links dentro de nav ficarão separados do resto)
