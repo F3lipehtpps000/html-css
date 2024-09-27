@@ -187,4 +187,4 @@ div.video iframe {
     height: 90%;
 }
 (saida: o video se adaptaram para qualquer tamanho e ficarão centralizados)
-(os valores podem ser modificados, porém esses são os que funcionaram para mim)
+(os valores podem ser modificados, esses são os que funcionaram para mim)
