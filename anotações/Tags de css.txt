@@ -65,6 +65,8 @@ Ex:  background-attachment: fixed;  (saida: o fundo do site não irá se mover)
 background-color = troca a cor do fundo
 Ex:  background-color: black;  (saida: o fundo será preto)
 
+background-image: url('LA');
+
 COMO FAZER GRADIENTE/DEGRADÊ
 Ex:  background-image: linear-gradient(to right, white, blue);  (saida: o fundo será um
 gradiente, de branco para azul)
