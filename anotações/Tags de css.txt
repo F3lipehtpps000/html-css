@@ -74,6 +74,10 @@ Ex: background-size: Npx;  (o fundo terá N pixels)
 background-repeat = define como o fundo se comporta no quesito repetição
 Ex: background-repeat: no-repeat;  (saída: o fundo não se repetira)
 
+background-position = define qual parte da imagem irá aparecer (quaso não caiba a imagem
+                      inteira)
+Ex: background-position: left center;  (saída: aparecerá a esquerda e o centro da imagem
+
 COMO FAZER GRADIENTE/DEGRADÊ
 Ex:  background-image: linear-gradient(to right, white, blue);  (saida: o fundo será um
 gradiente, de branco para azul)
@@ -90,7 +94,7 @@ Ex:  font-weight: bolder;  (saida: tudo ficará extra-negrito (bolder))
 font-size = muda o tamanho da fonte
 Ex:  font-size: 20px;  (saida: tudo ficará no tamanho 20 px)
 
-Sempre use "px" ou "em" quando for definir o tamanho de uma fonte
+Sempre use "px" ou "em" quando for definir o tamanho de uma fonte (é o meta)
 
 font = une "font-size", "font-weight", "font-family" e "font-style" em uma só
 Ex:  font: italic bolder 20px Arial;  (saida: tudo dentro ficará no tamanho 20 px, negrito,
