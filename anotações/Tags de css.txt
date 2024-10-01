@@ -65,7 +65,14 @@ Ex:  background-attachment: fixed;  (saida: o fundo do site não irá se mover)
 background-color = troca a cor do fundo
 Ex:  background-color: black;  (saida: o fundo será preto)
 
-background-image: url('LA');
+background-image = coloca uma imagem no fundo
+Ex: background-image: url('L/LA');  (uma imagem se repetirá no funco)
+
+background-size = determina o tamanho do fundo
+Ex: background-size: Npx;  (o fundo terá N pixels)
+
+background-repeat = define como o fundo se comporta no quesito repetição
+Ex: background-repeat: no-repeat;  (saída: o fundo não se repetira)
 
 COMO FAZER GRADIENTE/DEGRADÊ
 Ex:  background-image: linear-gradient(to right, white, blue);  (saida: o fundo será um
