@@ -60,7 +60,8 @@ Também existe o código HSF (Hue, Saturation, Luminosity), é usado colocando "
 deixar as informações no parenteses.
 
 background-attachment = diz a maquina como o fundo se comportará
-Ex:  background-attachment: fixed;  (saida: o fundo do site não irá se mover)
+Ex:  background-attachment: fixed;  (saida: o fundo do site irá acompanhar o cursor (será
+                                     fixo))
 
 background-color = troca a cor do fundo
 Ex:  background-color: black;  (saida: o fundo será preto)
@@ -77,6 +78,13 @@ Ex: background-repeat: no-repeat;  (saída: o fundo não se repetira)
 background-position = define qual parte da imagem irá aparecer (quaso não caiba a imagem
                       inteira)
 Ex: background-position: left center;  (saída: aparecerá a esquerda e o centro da imagem
+
+background = junta background color, image, position, repeat e attachment (nessa ordem)
+em só um comando
+Ex: background black url(L/LA) center center no-repeat fixed;  (Ex: o fundo será preto,
+                                                                com uma imagem, no centro,
+								sem repetição e fixada ao
+								fundo)
 
 COMO FAZER GRADIENTE/DEGRADÊ
 Ex:  background-image: linear-gradient(to right, white, blue);  (saida: o fundo será um
