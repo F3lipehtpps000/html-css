@@ -138,6 +138,12 @@ COMO PERSONALIZAR A BORDA
 (Saida: a tag terá uma borda personalizada)
 No segundo valor, regule o numero até se adequar a suas preferencias
 
+position = muda a forma que a caixa interage com comando de posição
+Ex: position: relative;
+    left: 20px;
+    top 10px
+(saida: o bloco em que o conteúdo está, ficará 20 pixels distante da esquerda, e 10 do teto)
+(sem o position: relative, não poderiamos utilizar left e top)
 
 margin = define uma margem
 Ex:  margin: 20px 20px 20px 20px;  (saida: cria uma margem de 20px em todas as direções)
@@ -209,3 +215,10 @@ div.video iframe {
 }
 (saida: o video se adaptaram para qualquer tamanho e ficarão centralizados)
 (os valores podem ser modificados, esses são os que funcionaram para mim)
+
+COMO CENTRALIZAR (vetical e horisontalmente)
+postion: absolute;
+left: 50%;
+top: 50%;
+transform: translate (-50%, -50%);
+(saída; o bloco estará 100% centralizado)
