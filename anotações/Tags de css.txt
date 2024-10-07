@@ -166,7 +166,7 @@ Ex:  text indent: 20px;  (saida: a primeira palavra do texto terá 20px de espa�
 do inicio da frase)
 
 list-style-position = define a posição da bolinha ao lado da lista
-Ex: lis-style-position: inside;  (saida: coloca as marcações de cada item da lista dentro do
+Ex: list-style-position: inside;  (saida: coloca as marcações de cada item da lista dentro do
                                   bloco localizado)
 
 trasition-duration = muda o tempo da transição
