@@ -2,42 +2,67 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
 header {
     background-color: black;
     color: white;
     text-align: center;
-    margin: -21px -21px 0px -21px;
-    padding: 20px 0px 0px 0px;
 }
 
 header h1 {
     font: 700 4em "Passion One";
-    padding: 0px 0px 5px 0px;
+    padding-top: 50px;
+    font-variant: small-caps;
 }
 
-header h1:hover {
-    text-decoration: underline;
+header p {
+    padding-bottom: 50px;
 }
 
-header h2 {
-    font: normal 1em Verdana;
-    margin: -35px 0px 0px 0px;
-    padding: 0px 0px 25px 0px;
-}
-
-a {
+header a, footer a {
     color: white;
     font-weight: bold;
     text-decoration: none;
 }
 
-a:hover {
+header a:hover, footer a:hover {
     text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+
+section.imagem p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.589);
 }
 
 footer {
     background-color: black;
     color: white;
     text-align: center;
-    margin: -20px -20px -21px -20px;
+    padding: 5px 10px 5px 10px;
 }

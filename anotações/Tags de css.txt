@@ -90,6 +90,10 @@ COMO FAZER GRADIENTE/DEGRADÊ
 Ex:  background-image: linear-gradient(to right, white, blue);  (saida: o fundo será um
 gradiente, de branco para azul)
 
+font-variant = faz uma variação da fonte
+Ex: font-variant: small-caps;  (saída: o texto será em CAPSLOOK, porém as primeiras letras
+                                serão maiores que as demais)
+
 font-family = muda a fonte
 Ex: font-family: Arial;  (saida: tudo ficará em Arial)
 
@@ -110,6 +114,9 @@ emitalico e na fonte Arial)
 
 Na tag "font"; é usado primeiro o estilo da fonte, depois o seu peso, seu tamanho e por
 fima fonte em si.
+
+text-tranform = tranforma o texto
+Ex: text-transform: uppercase;  (saída: o texto terá todas as letras maiúsculas (CAPSLOOK))
 
 box-shadow = cria um sombra
 Ex:  box-shadow: 5px 5px 5px black;  (saida: cria uma sombra tem 5px para os lados,
