@@ -269,3 +269,22 @@ Ex: <nav>
     *links*
     </nav>
 (saida: os links dentro de nav ficarão separados do resto)
+
+HIERARQUIA DE TABELAS
+    TABLE = tabela
+        TABLE ROW (tr) = linha de tabela
+            TABABLE HEADLER = cabeçalho de tabela
+                TABLE DATA (td) = dados de tabela
+Ex:
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+    </table>
+(saída: será feita uma tabela com duas linhas, três valores cada)
