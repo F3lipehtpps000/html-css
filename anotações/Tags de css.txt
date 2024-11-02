@@ -162,6 +162,9 @@ Ex:  padding: 20px 20px 20px 20px;  (saida: o texto irá ocupar 20 px a mais em 
 Na tag padding, margin, etc; os valores seguem no sentido horário, primeiro cima, depois
 direita, baixo e por fim esquerda.
 
+vertical-align = alinha verticalmente
+Ex: vertical-align: middle;  (saída: o texto estará no centro da caixa)
+
 text-align = define onde o texto estará
 Ex:  text-align: center;  (coloca o texto no centro)
 
