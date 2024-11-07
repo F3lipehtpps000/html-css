@@ -270,10 +270,10 @@ Ex: <nav>
     </nav>
 (saida: os links dentro de nav ficarão separados do resto)
 
-HIERARQUIA DE TABELAS
+HIERARQUIA DE TABELAS (simples)
     TABLE = tabela
         TABLE ROW (tr) = linha de tabela
-            TABABLE HEADLER = cabeçalho de tabela
+            TABABLE HEADLER (th) = cabeçalho de tabela
                 TABLE DATA (td) = dados de tabela
 Ex:
     <table>
@@ -288,3 +288,41 @@ Ex:
             <td>C2</td>
     </table>
 (saída: será feita uma tabela com duas linhas, três valores cada)
+
+ANATOMIA DE GRANDES TABELAS
+    TABLE
+        THEAD
+            TD, TD, TH
+        TBODY
+            TD, TD, TH
+        TFOOT
+            TD, TD, TH
+Ex:
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.973.190</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21.322.692</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17.219.679</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th id="foot">Total de habitantes</th>
+            <td>0.000</td>
+        </tfoot>
+    </table>
+
+(saída: será feita uma tabela com cabeçalho, corpo e rodapé)
