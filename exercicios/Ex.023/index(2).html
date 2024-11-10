@@ -8,13 +8,21 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+
         table {
             width: 400px;
             border-collapse: collapse;
         }
+
         td,  th {
             border: 1px solid black;
             padding: 7px;
+        }
+
+        caption{
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
         }
         thead, tfoot {
             background-color: dimgray;
@@ -22,8 +30,9 @@
             text-align: center;
             font-weight: bold;
         }
+
         td.num {
-            text-align: center;
+            text-align: right;
         }
     </style>
 </head>
@@ -32,6 +41,7 @@
     <!--
     Anatomia para tabelas grandes
         TABLE
+            CAPTION
             THEAD
                 TD, TD, TH
             TBODY
@@ -41,10 +51,11 @@
     -->
     
     <table>
+        <caption>População por estado (Brasil)</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 115px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -62,7 +73,7 @@
             </tr>
         </tbody>
         <tfoot>
-            <th id="foot">Total de habitantes</th>
+            <th id="foot" scope="rol">Total de habitantes</th>
             <td class="num"><strong>84.515.561</strong></td>
         </tfoot>
     </table>

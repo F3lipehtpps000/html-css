@@ -193,7 +193,7 @@ Ex:  <meta charset="UTF-8">
 Já em CSS se usa @charset UTF-8
 Ex: @charset UTF-8
 
-meta name = faz com que o site seja vizualizado em uma escala um pra um
+meta name = faz com que o site seja vizualizado em umFa escala um pra um
 Ex:  <meta name="vewport"
       content="width=device-width,initial-scale=1.0">
 
@@ -291,6 +291,7 @@ Ex:
 
 ANATOMIA DE GRANDES TABELAS
     TABLE
+        CAPTION
         THEAD
             TD, TD, TH
         TBODY
@@ -299,6 +300,7 @@ ANATOMIA DE GRANDES TABELAS
             TD, TD, TH
 Ex:
     <table>
+        <caption>População por estado (Brasil)</caption>
         <thead>
             <tr>
                 <th>Estado</th>
@@ -321,8 +323,19 @@ Ex:
         </tbody>
         <tfoot>
             <th id="foot">Total de habitantes</th>
-            <td>0.000</td>
+            <td>84.515.561</td>
         </tfoot>
     </table>
 
 (saída: será feita uma tabela com cabeçalho, corpo e rodapé)
+
+scope = diz a onde o valor do th estará
+(os exemplos a baixo levam em consideração a organização da tabela a cima)
+Ex 1: <th scope="rol">Total de habitantes<th>
+      <td>84.515.561</td>
+(saída: o valor da tabela estará ao lado)
+
+Ex 2: <th scope="col">Estado</th>
+      <th scope="col">População</th>
+(saída: o valor da tabela estará a baixo)
+
