@@ -152,6 +152,30 @@ Ex: position: relative;
 (saida: o bloco em que o conteúdo está, ficará 20 pixels distante da esquerda, e 10 do teto)
 (sem o position: relative, não poderiamos utilizar left e top)
 
+COMO CENTRALIZAR VIDEOS DO YOUTUBE
+div.video {
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+div.video iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+(saida: o video se adaptaram para qualquer tamanho e ficarão centralizados)
+(os valores podem ser modificados, esses são os que funcionaram para mim)
+
+COMO CENTRALIZAR (vetical e horisontalmente)
+postion: absolute;
+left: 50%;
+top: 50%;
+transform: translate (-50%, -50%);
+(saída; o bloco estará 100% centralizado)
+
 margin = define uma margem
 Ex:  margin: 20px 20px 20px 20px;  (saida: cria uma margem de 20px em todas as direções)
 
@@ -185,6 +209,15 @@ Ex: trasition-duration: 0.5s;  (saida: transições iram durar 0.5 segundos)
 display = diz o modo que a tag será exibida
 Ex: display: block;  (saida: o objeto será exibido de forma padrão)
 
+COMO CRIAR VARIAVEIS
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+(saida: as variaveis cor0 e cor2 seram criadas)
+Para acessar uma varivel é necessario usar "var(--*nome da variavel*)
+
+PSEUDO-CLASSES:
+
 hover = serve para categorizar de forma diferente uma parte da tela com e sem o mouse
 por cima dela
 Ex: p:hover { background color: green; }  (saida: quando passar o mouse por cima da tag p,
@@ -202,33 +235,8 @@ Ex: a::before { content:' P' }  (saida: "(tudo dentro da tag a) P")
 after = serve para definir/categorizar algo de firacá depois de uma tag
 Ex: a::after { content:' P' }  (saida: "(tudo dentro da tag a) P")
 
-COMO CRIAR VARIAVEIS
-:root {
-    --cor0: #c5ebd6;
-    --cor1: #83e1ad;
-(saida: as variaveis cor0 e cor2 seram criadas)
-Para acessar uma varivel é necessario usar "var(--*nome da variavel*)
+nth-child() é usado para criar op efeito 'zebrado'
+Ex: tr::nth-child(n2) { background-color: lightgray; }  (saída: a cada duas linhas (2n),
+                                                         o fundo do texto estará em cinza
+                                                         claro)
 
-COMO CENTRALIZAR VIDEOS DO YOUTUBE
-div.video {
-    margin: 0px -20px 30px -20px;
-    padding: 20px;
-    padding-bottom: 57%;
-    position: relative;
-}
-div.video iframe {
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
-}
-(saida: o video se adaptaram para qualquer tamanho e ficarão centralizados)
-(os valores podem ser modificados, esses são os que funcionaram para mim)
-
-COMO CENTRALIZAR (vetical e horisontalmente)
-postion: absolute;
-left: 50%;
-top: 50%;
-transform: translate (-50%, -50%);
-(saída; o bloco estará 100% centralizado)
