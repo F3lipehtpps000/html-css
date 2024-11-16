@@ -240,3 +240,13 @@ Ex: tr::nth-child(n2) { background-color: lightgray; }  (saída: a cada duas lin
                                                          o fundo do texto estará em cinza
                                                          claro)
 
+COMO FAZER UM CABEÇALHO FIXO (para tabelas grandes)
+table {
+   position: relative;
+}
+thead > tr > th {
+   position: sticky;
+   top: -1px;
+   background-color: rgb(N, N, N);
+}
+(saída: mesmo que você role para baixo, o cabeçalho permanecerá visivel)
