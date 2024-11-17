@@ -339,3 +339,8 @@ Ex 2: <th scope="col">Estado</th>
       <th scope="col">População</th>
 (saída: o valor da tabela estará a baixo)
 
+colspan = diz quantas colunas um valor irá ocupar
+Ex: <td colspan="2">P</td>  (saída: o valor "P" ocupará duas colunas)
+
+rowspan = diz quantas linhas um valor irá ocupar
+Ex: <td rowspan="3">P</td>  (saída: o valor "P" ocupará três linhas)
