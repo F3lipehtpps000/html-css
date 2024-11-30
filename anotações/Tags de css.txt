@@ -14,6 +14,12 @@ P = Palavra
 L = Link (de video, imagem etc)
 LA = Local do arquivo (dentro do pc)
 
+#  = id
+.  = class
+:  = pseudo-class
+:: = pseudo-element
+>  = children
+
 @charset = regra
 Ex: @charset "UTF-8";  (saida: irá aceitar caracteres UTF-8 (´, ~ etc))
 
@@ -235,10 +241,16 @@ Ex: a::before { content:' P' }  (saida: "(tudo dentro da tag a) P")
 after = serve para definir/categorizar algo de firacá depois de uma tag
 Ex: a::after { content:' P' }  (saida: "(tudo dentro da tag a) P")
 
-nth-child() é usado para criar op efeito 'zebrado'
-Ex: tr::nth-child(n2) { background-color: lightgray; }  (saída: a cada duas linhas (2n),
-                                                         o fundo do texto estará em cinza
-                                                         claro)
+nth-child() = é usado para criar op efeito 'zebrado'
+Ex: tr::nth-child(odd) { background-color: lightgray; }  (saída: toda linha de número impar terá
+							 um fundo do texto estará em cinza claro)
+
+colgroup = cria uma classe para toda uma coluna (em tabela)
+Ex: <colgroup>
+    <col class="nome">
+    <col class="idade">
+    </colgroup>
+(saída: se a tabela tiver duas colunas, ambas corresponderão a nome e idade, respectivamente)
 
 COMO FAZER UM CABEÇALHO FIXO (para tabelas grandes)
 table {

@@ -11,12 +11,6 @@ LA = Local do arquivo (dentro do pc)
 
 <> = Começar
 </> = Finalizar
-	
-#  = id
-.  = class
-:  = pseudo-class
-:: = pseudo-element
->  = children
 
 ! = NO VISUAL STUDIO CODE, cria uma extrutura básica para o código (!doctype, html, meta etc)
 
