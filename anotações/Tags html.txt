@@ -153,14 +153,13 @@ pois sites como esse possuem imagens sem direitos autorais
 Após o link da imagem você pode usar height="N" e width="N" para definir a altura e a
 largura respectivamente. (Pode ser usado em CSS)
 	
-video = videos
-Ex: <video width="N" height="N" src="L/LA" controls><video>  (Saida: video)
-
-iframe = videos
-Ex: <iframe width="N" height="N" src="L/LA"><iframe>  (Saida: video)
-
-É possivel pegar videos do Youtube e usar na tag iframe apenas indo em "compartilhar",
- "incorporar" e copiar o código
+iframe = cria uma 'janela' dentro do seu site
+Ex: <p>
+       Lorem ipsum dolor sit amet. 
+       <iframe src="L"><iframe>
+       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, possimus.
+    <p>
+(saída: cria um bloco em linha, no seu site, que possui o conteudo do link (L))
 
 !doctype html = faz com que o programa saiba a versão do html
 Ex> <!doctype>
