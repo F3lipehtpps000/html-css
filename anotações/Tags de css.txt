@@ -176,10 +176,10 @@ div.video iframe {
 (os valores podem ser modificados, esses são os que funcionaram para mim)
 
 COMO CENTRALIZAR (vetical e horisontalmente)
-postion: absolute;
+position: absolute;
 left: 50%;
 top: 50%;
-transform: translate (-50%, -50%);
+transform: translate(-50%, -50%);
 (saída; o bloco estará 100% centralizado)
 
 margin = define uma margem

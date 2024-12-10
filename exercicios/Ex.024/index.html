@@ -5,16 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de iframe</title>
     <style>
+        h1 {
+            text-align: center;
+        }
         iframe {
             width: 95vh;
             height: 60vh;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 <body>
     <h1>Testando o uso de um iframe</h1>
     <p>
-        <iframe src="https://www.retrogames.cz/play_414-DOS.php" frameborder="0"></iframe>
+        <!--Tamanho padrão de 300x150-->
+        <iframe src="https://www.wikipedia.com" frameborder="0">
+            <a href="https://www.wikipedia.com" target="_blank">Wikipedia</a>
+        </iframe>
     </p>
 </body>
 </html>
