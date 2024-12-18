@@ -160,6 +160,8 @@ Ex: <p>
        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, possimus.
     <p>
 (saída: cria um bloco em linha, no seu site, que possui o conteudo do link (L))
+(tudo que for inserido entre <iframe> e </iframe> apenas será exibido se ocorrer um erro de
+compatibilidade)
 
 !doctype html = faz com que o programa saiba a versão do html
 Ex> <!doctype>
