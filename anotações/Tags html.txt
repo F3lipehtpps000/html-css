@@ -164,7 +164,7 @@ Ex: <p>
 compatibilidade)
 
 !doctype html = faz com que o programa saiba a versão do html
-Ex> <!doctype>
+Ex: <!doctype>
     *comando*
 
 html lang = diz que o site é em html e em português
