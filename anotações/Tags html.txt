@@ -112,13 +112,13 @@ Ex: <a href="L"> P</a>  (Cria um botão escrito P que leva para um site)
 
 ul/il = lista desordenada
 Ex: <ul>
-       <li>Primeiro</li>  (Saida: Primeiro
-       <li>Segundo</li>    Saida: Segundo )
+       <li>Primeiro</li>  (saida: Primeiro
+       <li>Segundo</li>    saida: Segundo )
     <ul>
 ol/il = lista ordenada
 Ex: <ol type="1">
-       <li>Primeiro</li>  (Saida: 1. Primeiro
-       <li>Segundo</li>    Saida: 2. Segundo )
+       <li>Primeiro</li>  (saida: 1. Primeiro
+       <li>Segundo</li>    saida: 2. Segundo )
     <ol> 
 
 dl = lista de definição
@@ -162,6 +162,10 @@ Ex: <p>
 (saída: cria um bloco em linha, no seu site, que possui o conteudo do link (L))
 (tudo que for inserido entre <iframe> e </iframe> apenas será exibido se ocorrer um erro de
 compatibilidade)
+
+É possivel colocar tags de HTML em iframes, usando srcdoc
+Ex: <iframe srcdoc="<img src='L/LA'></img>"></iframe>  (saída: a imagem presente em L/LA estará
+                                                        dentro do iframe)
 
 !doctype html = faz com que o programa saiba a versão do html
 Ex: <!doctype>
