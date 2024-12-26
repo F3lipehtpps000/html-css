@@ -156,7 +156,7 @@ largura respectivamente. (Pode ser usado em CSS)
 iframe = cria uma 'janela' dentro do seu site
 Ex: <p>
        Lorem ipsum dolor sit amet. 
-       <iframe src="L"><iframe>
+       <iframe src="L/LA"><iframe>
        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, possimus.
     <p>
 (saída: cria um bloco em linha, no seu site, que possui o conteudo do link (L))
@@ -166,6 +166,10 @@ compatibilidade)
 É possivel colocar tags de HTML em iframes, usando srcdoc
 Ex: <iframe srcdoc="<img src='L/LA'></img>"></iframe>  (saída: a imagem presente em L/LA estará
                                                         dentro do iframe)
+
+Como ligar a segurança nos iframes
+<iframe src="L/LA" sandbox="sandbox" referrerpolicy="no-referrer">
+(saía: desabilita scripts, formulários, popups, etc)
 
 !doctype html = faz com que o programa saiba a versão do html
 Ex: <!doctype>
