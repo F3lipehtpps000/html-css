@@ -37,8 +37,12 @@ Ex:  @font-face { font-family: P;
  - truetype-att (Apple Advanced Typography)
  - svg
 
+!important = as opções de css dentro dela sobrepujam qualquer outra configuração CSS
+Ex: .classe01 { color: black !important; }
+(saída: as configurações da classe01 sobrepujarão todas as demais configurações)
+
 * = configuração global
-Ex:  height: 100%;  (saida: em gradientes baixo para cima, por exemplo, a tela toda
+Ex: * { height: 100%; } (saida: em gradientes baixo para cima, por exemplo, a tela toda
 será apenas um gradiente)
 
 width = largura
