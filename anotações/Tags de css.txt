@@ -213,8 +213,17 @@ list-style-position = define a posição da bolinha ao lado da lista
 Ex: list-style-position: inside;  (saida: coloca as marcações de cada item da lista dentro do
                                   bloco localizado)
 
-trasition-duration = muda o tempo da transição
-Ex: trasition-duration: 0.5s;  (saida: transições iram durar 0.5 segundos)
+trasition = coloca um tempo para a transição entre sem CSS e com o CSS
+Ex: trasition: 0.5s;  (saida: o CSS terá uma transição de 0.5 segundos para ser ativado)
+
+O transition pode ser usado em uma linha especifica de CSS
+Ex: P {
+          font-size: 30px;
+          transition: transform 0.5s;
+}
+(saída: o texto terá uma transição de 0.5 entre o tamanho padrão e o tamanho de 30px)
+
+transition: font-size 0.5s;
 
 display = diz o modo que a tag será exibida
 Ex: display: block;  (saida: o objeto será exibido de forma padrão)
