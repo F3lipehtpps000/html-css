@@ -96,6 +96,13 @@ Ex: background black url(L/LA) center center no-repeat fixed;  (Ex: o fundo ser�
 								sem repetição e fixada ao
 								fundo)
 
+COMO 'DELETAR' A BARRA DE ROLAGEM
+Ex:     ::-webkit-scrollbar {
+            width: 0px;
+            height: 0px;
+        }
+(saída: a barra de rolagem não existirá)
+
 COMO FAZER GRADIENTE/DEGRADÊ
 Ex:  background-image: linear-gradient(to right, white, blue);  (saida: o fundo será um
 gradiente, de branco para azul)
